@@ -115,9 +115,8 @@
         <li><a href="index.html">About Us</a></li>
         <li><a href="team.html">Our Team</a></li>
         <li><a href="events.html">Events</a></li>
-        <li><a href="news.html">News</a></li>
       </ul>
-      <a href="index.html" class="nav-logo">VoiceGivers<br>Choir</a>
+      <a href="index.html" class="nav-logo">VoiceGivers Choir</a>
       <ul class="nav-right">
         <li><a href="photos.html" class="active">Photos</a></li>
         <li><a href="videos.html">Videos</a></li>
@@ -155,12 +154,9 @@
         <img src="images/concert-04.jpg" alt="VoiceGivers performance" onclick="openLightbox(3)">
         <img src="images/concert-05.jpg" alt="VoiceGivers performance" onclick="openLightbox(4)">
         <img src="images/concert-06.jpg" alt="VoiceGivers performance" onclick="openLightbox(5)">
-        <img src="images/concert-07.jpg" alt="VoiceGivers performance" onclick="openLightbox(6)">
-        <img src="images/concert-08.jpg" alt="VoiceGivers performance" onclick="openLightbox(7)">
-        <img src="images/concert-09.jpg" alt="VoiceGivers performance" onclick="openLightbox(8)">
-        <img src="images/concert-10.jpg" alt="VoiceGivers performance" onclick="openLightbox(9)">
-        <img src="images/concert-11.jpg" alt="VoiceGivers performance" onclick="openLightbox(10)">
-        <img src="images/concert-12.jpg" alt="VoiceGivers performance" onclick="openLightbox(11)">
+        <img src="images/concert-08.jpg" alt="VoiceGivers performance" onclick="openLightbox(6)">
+        <img src="images/concert-09.jpg" alt="VoiceGivers performance" onclick="openLightbox(7)">
+        <img src="images/concert-10.jpg" alt="VoiceGivers performance" onclick="openLightbox(8)">
       </div>
 
     </div>
@@ -182,11 +178,8 @@
     <p class="footer-tagline">Professional Chamber Choir · Pittsburgh, Pennsylvania · Est. 2019</p>
     <div class="footer-social">
       <a href="https://www.facebook.com/VoiceGiversChoir" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://www.instagram.com/voicegiverschoir" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://twitter.com/VoiceGiversSing" target="_blank" rel="noopener">Twitter</a>
-      <a href="https://www.linkedin.com/company/voice-givers" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <p class="footer-copy">© 2019–2025 VoiceGivers. All rights reserved.</p>
+    <p class="footer-copy">© 2019–2026 VoiceGivers. All rights reserved.</p>
   </footer>
 
 
@@ -235,7 +228,7 @@
 
     // Hide images that fail to load (graceful degradation)
     document.querySelectorAll('#photoGrid img').forEach(img => {
-      img.onerror = function() { this.parentElement ? this.parentElement.style.display = 'none' : this.style.display = 'none'; };
+      img.onerror = function() { this.style.display = 'none'; };
     });
   </script>
 
