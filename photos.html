@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos — VoiceGivers Choir</title>
+  <meta name="description" content="Photos from VoiceGivers performances — a professional chamber choir in Pittsburgh, PA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Masonry-style photo grid */
+    .photo-grid {
+      columns: 3;
+      column-gap: 1rem;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      display: block;
+      margin-bottom: 1rem;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .photo-grid img:hover { opacity: 0.88; }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .lightbox.open { display: flex; }
+
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 88vh;
+      object-fit: contain;
+      border-radius: 2px;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.5rem;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      line-height: 1;
+      opacity: 0.7;
+      transition: opacity 0.15s;
+    }
+
+    .lightbox-close:hover { opacity: 1; }
+
+    .lightbox-prev,
+    .lightbox-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.15);
+      color: white;
+      border: none;
+      font-size: 1.5rem;
+      padding: 1rem 0.75rem;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.15s;
+    }
+
+    .lightbox-prev { left: 1rem; }
+    .lightbox-next { right: 1rem; }
+    .lightbox-prev:hover,
+    .lightbox-next:hover { background: rgba(255,255,255,0.3); }
+
+    @media (max-width: 720px) {
+      .photo-grid { columns: 2; }
+    }
+
+    @media (max-width: 480px) {
+      .photo-grid { columns: 1; }
+    }
+
+    /* Instructions for adding photos */
+    .add-photos-note {
+      background: var(--navy-pale);
+      border: 1px dashed var(--border);
+      border-radius: 3px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      font-size: 0.88rem;
+      color: var(--text-light);
+    }
+
+    .add-photos-note strong { color: var(--navy); }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <div class="nav-inner">
+      <ul class="nav-left">
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+      <a href="index.html" class="nav-logo">VoiceGivers<br>Choir</a>
+      <ul class="nav-right">
+        <li><a href="photos.html" class="active">Photos</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <h1>Photos</h1>
+  </div>
+
+
+  <!-- ── PHOTO GALLERY ── -->
+  <section>
+    <div class="container">
+
+      <p class="section-label">Gallery</p>
+      <h2>VoiceGivers in Performance</h2>
+      <div class="navy-rule"></div>
+
+      <!--
+        HOW TO ADD PHOTOS:
+        1. Drop your photos into the images/ folder (e.g. images/concert-01.jpg)
+        2. Copy one of the <img> lines below and update the src and alt
+        3. The gallery and lightbox work automatically — no other changes needed
+      -->
+
+      <div class="photo-grid" id="photoGrid">
+        <img src="images/concert-01.jpg" alt="VoiceGivers performance" onclick="openLightbox(0)">
+        <img src="images/concert-02.jpg" alt="VoiceGivers performance" onclick="openLightbox(1)">
+        <img src="images/concert-03.jpg" alt="VoiceGivers performance" onclick="openLightbox(2)">
+        <img src="images/concert-04.jpg" alt="VoiceGivers performance" onclick="openLightbox(3)">
+        <img src="images/concert-05.jpg" alt="VoiceGivers performance" onclick="openLightbox(4)">
+        <img src="images/concert-06.jpg" alt="VoiceGivers performance" onclick="openLightbox(5)">
+        <img src="images/concert-07.jpg" alt="VoiceGivers performance" onclick="openLightbox(6)">
+        <img src="images/concert-08.jpg" alt="VoiceGivers performance" onclick="openLightbox(7)">
+        <img src="images/concert-09.jpg" alt="VoiceGivers performance" onclick="openLightbox(8)">
+        <img src="images/concert-10.jpg" alt="VoiceGivers performance" onclick="openLightbox(9)">
+        <img src="images/concert-11.jpg" alt="VoiceGivers performance" onclick="openLightbox(10)">
+        <img src="images/concert-12.jpg" alt="VoiceGivers performance" onclick="openLightbox(11)">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── LIGHTBOX ── -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-prev" onclick="shiftLightbox(-1, event)">&#8592;</button>
+    <img id="lightboxImg" src="" alt="">
+    <button class="lightbox-next" onclick="shiftLightbox(1, event)">&#8594;</button>
+  </div>
+
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-logo">VoiceGivers Choir</div>
+    <p class="footer-tagline">Professional Chamber Choir · Pittsburgh, Pennsylvania · Est. 2019</p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/VoiceGiversChoir" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/voicegiverschoir" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/VoiceGiversSing" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com/company/voice-givers" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="footer-copy">© 2019–2025 VoiceGivers. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    // Collect only images that actually loaded
+    let images = [];
+    let current = 0;
+
+    function buildImageList() {
+      images = Array.from(document.querySelectorAll('#photoGrid img'))
+                    .filter(img => img.complete && img.naturalWidth > 0);
+    }
+
+    function openLightbox(index) {
+      buildImageList();
+      if (images.length === 0) return;
+      current = images.findIndex(img => img.getAttribute('onclick') === `openLightbox(${index})`);
+      if (current < 0) current = 0;
+      document.getElementById('lightboxImg').src = images[current].src;
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e && e.target !== document.getElementById('lightbox') &&
+          !e.target.classList.contains('lightbox-close')) return;
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function shiftLightbox(dir, e) {
+      if (e) e.stopPropagation();
+      buildImageList();
+      current = (current + dir + images.length) % images.length;
+      document.getElementById('lightboxImg').src = images[current].src;
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      const lb = document.getElementById('lightbox');
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'ArrowRight') shiftLightbox(1, null);
+      if (e.key === 'ArrowLeft')  shiftLightbox(-1, null);
+      if (e.key === 'Escape')     { lb.classList.remove('open'); document.body.style.overflow = ''; }
+    });
+
+    // Hide images that fail to load (graceful degradation)
+    document.querySelectorAll('#photoGrid img').forEach(img => {
+      img.onerror = function() { this.parentElement ? this.parentElement.style.display = 'none' : this.style.display = 'none'; };
+    });
+  </script>
+
+</body>
+</html>

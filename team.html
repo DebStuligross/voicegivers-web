@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team — VoiceGivers Choir</title>
+  <meta name="description" content="Meet the team behind VoiceGivers — Artistic Director Joseph Stuligross and Managing Director Deb Stuligross.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .bio-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 3rem;
+      align-items: start;
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bio-layout:last-child { border-bottom: none; }
+
+    .bio-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: 3px;
+      display: block;
+    }
+
+    .bio-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--navy-pale);
+      border: 2px dashed var(--border);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+      font-size: 0.82rem;
+    }
+
+    .bio-photo-wrap { position: sticky; top: 80px; }
+
+    .bio-name {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin-bottom: 0.2rem;
+    }
+
+    .bio-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.75rem;
+    }
+
+    .bio-text p { margin-bottom: 1rem; }
+
+    .credential-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .cred {
+      font-size: 0.72rem;
+      color: var(--text-light);
+      background: var(--navy-pale);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 0.28rem 0.7rem;
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 720px) {
+      .bio-layout { grid-template-columns: 1fr; }
+      .bio-photo-wrap { position: static; max-width: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <div class="nav-inner">
+      <ul class="nav-left">
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="team.html" class="active">Our Team</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+      <a href="index.html" class="nav-logo">VoiceGivers<br>Choir</a>
+      <ul class="nav-right">
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <h1>Our Team</h1>
+  </div>
+
+
+  <!-- ── TEAM BIOS ── -->
+  <section>
+    <div class="container">
+
+      <!-- Joseph Stuligross -->
+      <div class="bio-layout">
+        <div class="bio-photo-wrap">
+          <img
+            src="images/joe-stuligross.jpg"
+            alt="Joseph Stuligross, Artistic Director"
+            class="bio-photo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+          <div class="bio-photo-placeholder">Photo coming soon</div>
+        </div>
+
+        <div>
+          <h2 class="bio-name">Joseph Stuligross</h2>
+          <p class="bio-title">Artistic Director &amp; Co-Founder &nbsp;·&nbsp; Conductor &nbsp;·&nbsp; Tenor &nbsp;·&nbsp; Professor</p>
+
+          <div class="bio-text">
+            <p>American choral conductor, singer, and educator Joseph Stuligross has held conducting posts at Duquesne University, as well as at the Conservatorio di Musica "Giuseppe Tartini" in Trieste, Italy and at the Akademia Muzyczna im. Feliksa Nowowiejskiego in Poland. As a Fulbright Scholar, Dr.&nbsp;Stuligross served as choral conductor and pedagogue at the University of Pécs in Hungary, where he conducted university choral ensembles and lectured on American music and music education.</p>
+
+            <p>He has taught graduate and undergraduate conducting majors as well as courses in a variety of music education subjects. A widely respected music educator, Dr.&nbsp;Stuligross has led masterclasses and workshops throughout Europe, most recently completing a highly successful series of workshops for singers and conservatory students at the Istanbul State Conservatory in Turkey — covering topics including "Music and Movement," "Training the Complete Musician," and "Preparing High School Choral Musicians."</p>
+
+            <p>Trained as a singer, Dr.&nbsp;Stuligross performed professionally for many years with opera, chamber, and symphonic choral ensembles in the US and Germany. He remains active as a singer with the Mendelssohn Choir of Pittsburgh, the Pittsburgh Camerata, and other ensembles. He studied with renowned choral conductors Robert Fountain, Joseph Flummerfelt, Simon Carrington, Robert Page, William Weinert, and Paul Salamunovich, and has also studied Dalcroze Eurhythmics, advocating the use of physical movement to enhance musical expression.</p>
+
+            <p>Dr.&nbsp;Stuligross earned degrees from the College of Wooster, the University of Wisconsin, and Harvard University. In addition to his musical career, he has also distinguished himself as an appellate labor and retirement benefits attorney.</p>
+          </div>
+
+          <div class="credential-row">
+            <span class="cred">Fulbright Scholar</span>
+            <span class="cred">Harvard University</span>
+            <span class="cred">University of Wisconsin</span>
+            <span class="cred">College of Wooster</span>
+            <span class="cred">Duquesne University</span>
+            <span class="cred">Mendelssohn Choir of Pittsburgh</span>
+            <span class="cred">Pittsburgh Camerata</span>
+            <span class="cred">Dalcroze Eurhythmics</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Deb Stuligross -->
+      <div class="bio-layout">
+        <div class="bio-photo-wrap">
+          <img
+            src="images/deb-stuligross.jpg"
+            alt="Deb Stuligross, Managing Director"
+            class="bio-photo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+          <div class="bio-photo-placeholder">Photo coming soon</div>
+        </div>
+
+        <div>
+          <h2 class="bio-name">Deb Stuligross</h2>
+          <p class="bio-title">Managing Director &amp; Co-Founder</p>
+
+          <div class="bio-text">
+            <p>Deborah Stuligross, Managing Director and Co-Founder of VoiceGivers, also serves the nonprofit community as founder and CEO of StrefaTECH, an organization providing technology and AI advisory services to nonprofit organizations. She is an active volunteer with Tech To The Rescue, President of the Fine Art Miracles Board, Treasurer of the Reading Ready Pittsburgh Board, and active in many other nonprofit organizations.</p>
+            <p>Her prior career included working as the Director of Corporate Work Study at Holy Family Academy (now Nazareth Prep), a program of Holy Family Institute; Director of IT at Eaton Corporation; and numerous roles at Rockwell Automation and Systems Modeling Corporation.</p>
+            <p>She is a happy alto in the Bloomsburg Singers.</p>
+            <p><a href="mailto:debstuligross@gmail.com">debstuligross@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/deb-stuligross/" target="_blank" rel="noopener">linkedin.com/in/deb-stuligross</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-logo">VoiceGivers Choir</div>
+    <p class="footer-tagline">Professional Chamber Choir · Pittsburgh, Pennsylvania · Est. 2019</p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/VoiceGiversChoir" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/voicegiverschoir" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/VoiceGiversSing" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com/company/voice-givers" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="footer-copy">© 2019–2025 VoiceGivers. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

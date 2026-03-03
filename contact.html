@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — VoiceGivers Choir</title>
+  <meta name="description" content="Contact VoiceGivers — a professional chamber choir in Pittsburgh, PA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 0;
+    }
+
+    .contact-block h3 {
+      font-size: 1rem;
+      color: var(--navy);
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-block p {
+      font-size: 0.92rem;
+    }
+
+    .contact-block a {
+      color: var(--navy);
+      font-weight: 500;
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .social-card {
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--navy);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .social-card:hover {
+      border-color: var(--navy);
+      box-shadow: 0 2px 10px rgba(26,36,86,0.1);
+      text-decoration: none;
+      color: var(--navy);
+    }
+
+    .social-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .social-handle {
+      font-size: 0.78rem;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 640px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .social-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <div class="nav-inner">
+      <ul class="nav-left">
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+      <a href="index.html" class="nav-logo">VoiceGivers<br>Choir</a>
+      <ul class="nav-right">
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <h1>Contact Us</h1>
+  </div>
+
+
+  <!-- ── CONTACT ── -->
+  <section>
+    <div class="container">
+
+      <p class="section-label">Get in Touch</p>
+      <h2>We'd Love to Hear From You</h2>
+      <div class="navy-rule"></div>
+
+      <div class="contact-grid">
+
+        <div>
+          <div class="contact-block" style="margin-bottom: 2rem;">
+            <h3>General Inquiries</h3>
+            <p><a href="mailto:voicegiverschoir@gmail.com">voicegiverschoir@gmail.com</a></p>
+          </div>
+
+          <div class="contact-block" style="margin-bottom: 2rem;">
+            <h3>Artistic Director</h3>
+            <p>Joseph Stuligross</p>
+            <p><a href="mailto:jstuligross@gmail.com">jstuligross@gmail.com</a></p>
+          </div>
+
+          <div class="contact-block">
+            <h3>Location</h3>
+            <p>Pittsburgh, Pennsylvania</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="margin-bottom: 1rem;">Follow VoiceGivers</h3>
+
+          <div class="social-grid">
+            <a href="https://www.facebook.com/VoiceGiversChoir" class="social-card" target="_blank" rel="noopener">
+              <div>
+                <div class="social-name">Facebook</div>
+                <div class="social-handle">VoiceGiversChoir</div>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/voicegiverschoir" class="social-card" target="_blank" rel="noopener">
+              <div>
+                <div class="social-name">Instagram</div>
+                <div class="social-handle">@voicegiverschoir</div>
+              </div>
+            </a>
+            <a href="https://twitter.com/VoiceGiversSing" class="social-card" target="_blank" rel="noopener">
+              <div>
+                <div class="social-name">Twitter</div>
+                <div class="social-handle">@VoiceGiversSing</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/company/voice-givers" class="social-card" target="_blank" rel="noopener">
+              <div>
+                <div class="social-name">LinkedIn</div>
+                <div class="social-handle">Voice Givers</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-logo">VoiceGivers Choir</div>
+    <p class="footer-tagline">Professional Chamber Choir · Pittsburgh, Pennsylvania · Est. 2019</p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/VoiceGiversChoir" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/voicegiverschoir" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/VoiceGiversSing" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com/company/voice-givers" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="footer-copy">© 2019–2025 VoiceGivers. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

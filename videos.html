@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos — VoiceGivers Choir</title>
+  <meta name="description" content="Watch VoiceGivers in performance — a professional chamber choir in Pittsburgh, PA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Thumbnail-first approach: shows thumbnail, loads iframe on click */
+    .video-item {
+      position: relative;
+      aspect-ratio: 16/9;
+      background: #000;
+      border-radius: 3px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .video-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.2s;
+    }
+
+    .video-item:hover img { opacity: 0.85; }
+
+    .play-btn {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .play-btn::after {
+      content: '';
+      width: 60px;
+      height: 60px;
+      background: rgba(255,255,255,0.9);
+      border-radius: 50%;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+    }
+
+    .play-btn::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 12px 0 12px 22px;
+      border-color: transparent transparent transparent var(--navy);
+      margin-left: 5px;
+      z-index: 1;
+    }
+
+    .video-item iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .video-caption {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <div class="nav-inner">
+      <ul class="nav-left">
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+      <a href="index.html" class="nav-logo">VoiceGivers<br>Choir</a>
+      <ul class="nav-right">
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="videos.html" class="active">Videos</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <h1>Videos</h1>
+  </div>
+
+
+  <!-- ── VIDEO GRID ── -->
+  <section>
+    <div class="container">
+
+      <p class="section-label">Performances &amp; More</p>
+      <h2>Watch VoiceGivers</h2>
+      <div class="navy-rule"></div>
+      <p style="margin-bottom: 2.5rem;">Click any thumbnail to watch. Videos open directly on this page.</p>
+
+      <div class="video-grid">
+
+        <div>
+          <div class="video-item" onclick="playVideo(this, 'ptpwBnybM_A')">
+            <img src="https://img.youtube.com/vi/ptpwBnybM_A/hqdefault.jpg" alt="VoiceGivers video" loading="lazy">
+            <div class="play-btn"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="video-item" onclick="playVideo(this, 'Cegr8sa80YM')">
+            <img src="https://img.youtube.com/vi/Cegr8sa80YM/hqdefault.jpg" alt="VoiceGivers video" loading="lazy">
+            <div class="play-btn"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="video-item" onclick="playVideo(this, '3-OheqlfSZI')">
+            <img src="https://img.youtube.com/vi/3-OheqlfSZI/hqdefault.jpg" alt="VoiceGivers video" loading="lazy">
+            <div class="play-btn"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="video-item" onclick="playVideo(this, 'Lgur90Bf_5w')">
+            <img src="https://img.youtube.com/vi/Lgur90Bf_5w/hqdefault.jpg" alt="VoiceGivers video" loading="lazy">
+            <div class="play-btn"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="video-item" onclick="playVideo(this, '2VJmxztPyV8')">
+            <img src="https://img.youtube.com/vi/2VJmxztPyV8/hqdefault.jpg" alt="VoiceGivers video" loading="lazy">
+            <div class="play-btn"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="video-item" onclick="playVideo(this, 'LmzqZFDM6bM')">
+            <img src="https://img.youtube.com/vi/LmzqZFDM6bM/hqdefault.jpg" alt="VoiceGivers video" loading="lazy">
+            <div class="play-btn"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="video-item" onclick="playVideo(this, 'PWwAtRNCcIw')">
+            <img src="https://img.youtube.com/vi/PWwAtRNCcIw/hqdefault.jpg" alt="VoiceGivers video" loading="lazy">
+            <div class="play-btn"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="video-item" onclick="playVideo(this, 'VA7zDw6R3yM')">
+            <img src="https://img.youtube.com/vi/VA7zDw6R3yM/hqdefault.jpg" alt="VoiceGivers video" loading="lazy">
+            <div class="play-btn"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="video-item" onclick="playVideo(this, 'L20l7aj1I60')">
+            <img src="https://img.youtube.com/vi/L20l7aj1I60/hqdefault.jpg" alt="VoiceGivers video" loading="lazy">
+            <div class="play-btn"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="video-item" onclick="playVideo(this, '32_qwfAhhlA')">
+            <img src="https://img.youtube.com/vi/32_qwfAhhlA/hqdefault.jpg" alt="VoiceGivers video" loading="lazy">
+            <div class="play-btn"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="video-item" onclick="playVideo(this, 'S8tprAFVfiY')">
+            <img src="https://img.youtube.com/vi/S8tprAFVfiY/hqdefault.jpg" alt="VoiceGivers video" loading="lazy">
+            <div class="play-btn"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <p style="margin-top: 2.5rem; font-size: 0.88rem;">
+        View all videos on our
+        <a href="https://www.youtube.com/channel/UCDDr3XdoKKiDfBWWz8GnteQ" target="_blank" rel="noopener">YouTube channel →</a>
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-logo">VoiceGivers Choir</div>
+    <p class="footer-tagline">Professional Chamber Choir · Pittsburgh, Pennsylvania · Est. 2019</p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/VoiceGiversChoir" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/voicegiverschoir" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/VoiceGiversSing" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com/company/voice-givers" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="footer-copy">© 2019–2025 VoiceGivers. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    function playVideo(el, videoId) {
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+      iframe.allowFullscreen = true;
+      // Remove thumbnail and play button, insert iframe
+      el.innerHTML = '';
+      el.appendChild(iframe);
+      el.style.cursor = 'default';
+      el.onclick = null;
+    }
+  </script>
+
+</body>
+</html>

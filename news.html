@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News — VoiceGivers Choir</title>
+  <meta name="description" content="Press coverage and news about VoiceGivers, a professional chamber choir in Pittsburgh, PA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 0;
+    }
+
+    .news-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+
+    .news-card:hover {
+      box-shadow: 0 4px 20px rgba(26,36,86,0.1);
+      border-color: var(--navy);
+    }
+
+    .news-source {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.6rem;
+    }
+
+    .news-type {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.5rem;
+      border-radius: 2px;
+      margin-bottom: 0.75rem;
+    }
+
+    .type-article { background: var(--navy-pale); color: var(--navy); }
+    .type-podcast { background: #fef3e2; color: #8b5e00; }
+    .type-listing { background: #f0fdf4; color: #166534; }
+    .type-award   { background: #fdf2f8; color: #7e1d6b; }
+
+    .news-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--navy);
+      line-height: 1.35;
+      margin-bottom: 0.75rem;
+      flex-grow: 1;
+    }
+
+    .news-desc {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      margin-bottom: 1.25rem;
+    }
+
+    .news-link {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--navy);
+      text-decoration: none;
+      border-bottom: 2px solid var(--navy);
+      padding-bottom: 1px;
+      align-self: flex-start;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .news-link:hover {
+      color: var(--gold);
+      border-color: var(--gold);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <div class="nav-inner">
+      <ul class="nav-left">
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+      </ul>
+      <a href="index.html" class="nav-logo">VoiceGivers<br>Choir</a>
+      <ul class="nav-right">
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <h1>News</h1>
+  </div>
+
+
+  <!-- ── NEWS ── -->
+  <section>
+    <div class="container">
+
+      <p class="section-label">Press &amp; Media</p>
+      <h2>VoiceGivers in the News</h2>
+      <div class="navy-rule"></div>
+
+      <div class="news-grid">
+
+        <div class="news-card">
+          <p class="news-source">SparkT</p>
+          <span class="news-type type-article">Feature Article</span>
+          <h3 class="news-title">There's No One Quite Like Them: Singers Use Their Time and Talent to Make a Difference</h3>
+          <p class="news-desc">A feature story on VoiceGivers and the singers who give their time and talent in service of community.</p>
+          <a href="https://sparkt.com/theres-no-one-quite-like-them-singers-use-their-time-and-talent-to-make-a-difference" class="news-link" target="_blank" rel="noopener">Read Article →</a>
+        </div>
+
+        <div class="news-card">
+          <p class="news-source">WQED FM</p>
+          <span class="news-type type-podcast">Podcast</span>
+          <h3 class="news-title">Voice Arts: Joseph Stuligross &amp; VoiceGivers</h3>
+          <p class="news-desc">Artistic Director Joseph Stuligross joins the WQED FM Voice Arts podcast to discuss VoiceGivers and the intersection of music and community.</p>
+          <a href="https://www.wqed.org/fm/podcasts/voice-arts/joseph-stuligross-voicegivers" class="news-link" target="_blank" rel="noopener">Listen →</a>
+        </div>
+
+        <div class="news-card">
+          <p class="news-source">Podcast</p>
+          <span class="news-type type-podcast">Podcast</span>
+          <h3 class="news-title">VoiceGivers: Help and Hope for Vulnerable Children</h3>
+          <p class="news-desc">A podcast episode featuring VoiceGivers Managing Director Deb Stuligross discussing the Holy Family Institute benefit concert.</p>
+          <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8zNDExODAucnNz&episode=QnV6enNwcm91dC0yODMyODIw&hl=en&ved=2ahUKEwjeiqTvmffnAhVghHIEHXeJBFkQjrkEegQIBBAI&ep=6" class="news-link" target="_blank" rel="noopener">Listen →</a>
+        </div>
+
+        <div class="news-card">
+          <p class="news-source">Artsburgh</p>
+          <span class="news-type type-listing">Event Listing</span>
+          <h3 class="news-title">VoiceGivers Concert: Help and Hope for Vulnerable Children</h3>
+          <p class="news-desc">Artsburgh event listing for the VoiceGivers benefit concert for the Pediatric Palliative Care Coalition.</p>
+          <a href="https://www.artsburgh.org/event/voicegivers-concert-help-and-hope-for-vulnerable-children/" class="news-link" target="_blank" rel="noopener">View Listing →</a>
+        </div>
+
+        <div class="news-card">
+          <p class="news-source">TribLive / Sewickley</p>
+          <span class="news-type type-listing">Press Mention</span>
+          <h3 class="news-title">Choir Concert, Networking Meeting and More In and Around Sewickley</h3>
+          <p class="news-desc">TribLive coverage of VoiceGivers and community events in the Sewickley area.</p>
+          <a href="https://sewickley.triblive.com/choir-concert-networking-meeting-and-more-in-and-around-sewickley/" class="news-link" target="_blank" rel="noopener">Read Article →</a>
+        </div>
+
+        <div class="news-card">
+          <p class="news-source">TribLive / Fox Chapel</p>
+          <span class="news-type type-article">Feature Article</span>
+          <h3 class="news-title">VoiceGivers Performing Inaugural Concert at Fox Chapel Presbyterian Church</h3>
+          <p class="news-desc">Preview coverage of VoiceGivers' inaugural benefit concert at Fox Chapel Presbyterian Church.</p>
+          <a href="https://foxchapel.triblive.com/voicegivers-performing-inaugural-concert-at-fox-chapel-presbyterian-church/" class="news-link" target="_blank" rel="noopener">Read Article →</a>
+        </div>
+
+        <div class="news-card">
+          <p class="news-source">The Awesome Foundation</p>
+          <span class="news-type type-award">Grant Award</span>
+          <h3 class="news-title">VoiceGivers Choir — Awesome Foundation Grant Recipient</h3>
+          <p class="news-desc">VoiceGivers was awarded a grant from the Awesome Foundation in recognition of its unique model of community-focused choral performance.</p>
+          <a href="https://www.awesomefoundation.org/en/projects/127796-voicegivers-choir" class="news-link" target="_blank" rel="noopener">View Award →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-logo">VoiceGivers Choir</div>
+    <p class="footer-tagline">Professional Chamber Choir · Pittsburgh, Pennsylvania · Est. 2019</p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/VoiceGiversChoir" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/voicegiverschoir" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/VoiceGiversSing" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com/company/voice-givers" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="footer-copy">© 2019–2025 VoiceGivers. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

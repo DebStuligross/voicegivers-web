@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — VoiceGivers Choir</title>
+  <meta name="description" content="Past and upcoming performances by VoiceGivers, a professional chamber choir in Pittsburgh, PA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .event-card {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 2rem;
+      align-items: start;
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .event-card:last-child { border-bottom: none; }
+
+    .event-date-block {
+      background: var(--navy);
+      color: white;
+      border-radius: 3px;
+      padding: 1rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .event-month {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .event-day {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      line-height: 1;
+      margin: 0.2rem 0;
+    }
+
+    .event-year {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .event-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+    }
+
+    .event-meta {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .event-body p { margin-bottom: 0.7rem; }
+
+    .event-partner {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--navy);
+      background: var(--navy-pale);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 0.3rem 0.7rem;
+    }
+
+    @media (max-width: 600px) {
+      .event-card { grid-template-columns: 1fr; }
+      .event-date-block { display: flex; gap: 0.75rem; align-items: center; justify-content: center; max-width: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <div class="nav-inner">
+      <ul class="nav-left">
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+      <a href="index.html" class="nav-logo">VoiceGivers<br>Choir</a>
+      <ul class="nav-right">
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ── PAGE HERO ── -->
+  <div class="page-hero">
+    <h1>Events</h1>
+  </div>
+
+
+  <!-- ── EVENTS ── -->
+  <section>
+    <div class="container">
+
+      <p class="section-label">Past Performances</p>
+      <h2>Concert History</h2>
+      <div class="navy-rule"></div>
+
+      <!-- Event: Holy Family Institute, Feb 2020 -->
+      <div class="event-card">
+        <div class="event-date-block">
+          <div class="event-month">Feb</div>
+          <div class="event-day">29</div>
+          <div class="event-year">2020</div>
+        </div>
+        <div class="event-body">
+          <h3 class="event-title">Help and Hope for Vulnerable Children</h3>
+          <p class="event-meta">Holy Family Institute &nbsp;·&nbsp; Pittsburgh, PA</p>
+          <p>VoiceGivers presented its second benefit concert in partnership with the Holy Family Institute. The program brought together powerful choral music with the mission of an organization dedicated to strengthening families and serving vulnerable children in the Pittsburgh region.</p>
+          <span class="event-partner">Benefiting: Holy Family Institute</span>
+        </div>
+      </div>
+
+      <!-- Event: PPCC Inaugural, Oct 2019 -->
+      <div class="event-card">
+        <div class="event-date-block">
+          <div class="event-month">Oct</div>
+          <div class="event-day">13</div>
+          <div class="event-year">2019</div>
+        </div>
+        <div class="event-body">
+          <h3 class="event-title">Giving Help and Hope to Vulnerable Children</h3>
+          <p class="event-meta">Fox Chapel Presbyterian Church &nbsp;·&nbsp; Pittsburgh, PA</p>
+          <p>The inaugural VoiceGivers concert, part of the Fox Chapel Presbyterian Church Special Music Series, was a resounding success. More than 100 audience members attended, and the concert raised over $2,000 for the Pediatric Palliative Care Coalition — helping advance its mission to improve quality of life for children with serious illness and their families.</p>
+          <p>The program featured <em>"You Do Not Walk Alone"</em> by Dominick DiOrio, conducted by Joseph Stuligross.</p>
+          <span class="event-partner">Benefiting: Pediatric Palliative Care Coalition</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-logo">VoiceGivers Choir</div>
+    <p class="footer-tagline">Professional Chamber Choir · Pittsburgh, Pennsylvania · Est. 2019</p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/VoiceGiversChoir" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/voicegiverschoir" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/VoiceGiversSing" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com/company/voice-givers" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="footer-copy">© 2019–2025 VoiceGivers. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

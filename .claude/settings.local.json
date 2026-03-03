@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:voicegivers.org)"
+      "WebFetch(domain:voicegivers.org)",
+      "WebFetch(domain:web.archive.org)",
+      "WebFetch(domain:www.youtube.com)",
+      "WebFetch(domain:voicegivers.squarespace.com)",
+      "WebFetch(domain:static1.squarespace.com)",
+      "WebFetch(domain:www.voicegiverschoir.org)",
+      "WebFetch(domain:www.awesomefoundation.org)",
+      "WebFetch(domain:www.pghcitypaper.com)"
     ]
   }
 }
